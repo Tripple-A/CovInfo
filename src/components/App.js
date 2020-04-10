@@ -1,5 +1,5 @@
 import React from 'react';
-import track from './apis'
+import track from '../apis'
 
 
 function App() {
