@@ -3,6 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const { NovelCovid } = require('novelcovid');
+ 
+   const track = new NovelCovid();
+   console.log(track.all())
   return (
     <div className="App">
       <header className="App-header">
