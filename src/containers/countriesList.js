@@ -1,14 +1,20 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
 import DISPLAYCOUNTRIES from '../actions';
 import track from '../apis';
+import ListCountry from '../components/showCountries'
 
 
 const mapDispatchToProps = dispatch => ({
     addCountries: countries => dispatch(DISPLAYCOUNTRIES(countries))
 })
 
-const CountriesList = ({addCountries}) => {
+const mapStateToProps = state => ({
+    countries: state.countries
+})
+
+const CountriesList = ({addCountries, countries}) => {
+    console.log(countries[1])
     useEffect(() => {
         async function fetchData() {
           await track.countries()
@@ -16,9 +22,13 @@ const CountriesList = ({addCountries}) => {
         }
         fetchData();
       }, [])
+
+    const list = countries.map(country => <ListCountry country={country} key={country}/>)  
    return(
-       <div>Hello</div>
+       <div>
+           {list}
+       </div>
    )
 }
 
-export default connect(null,mapDispatchToProps)(CountriesList)
+export default connect(mapStateToProps,mapDispatchToProps)(CountriesList)
