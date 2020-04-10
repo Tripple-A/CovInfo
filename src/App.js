@@ -3,7 +3,7 @@ import track from './apis'
 
 
 function App() {
-  console.log(track.all())
+  console.log(track.countries())
   return (
     <div className="App">
       <h2>CovInfo</h2>
