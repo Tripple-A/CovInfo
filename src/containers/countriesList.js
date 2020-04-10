@@ -14,16 +14,15 @@ const mapStateToProps = state => ({
 })
 
 const CountriesList = ({addCountries, countries}) => {
-    console.log(countries[1])
     useEffect(() => {
         async function fetchData() {
           await track.countries()
             .then(resp => addCountries(resp) )   
         }
         fetchData();
-      }, [])
+      }, [addCountries])
 
-    const list = countries.map(country => <ListCountry country={country} key={country}/>)  
+    const list = countries.map(country => <ListCountry country={country} key={country.country}/>)  
    return(
        <div>
            {list}
