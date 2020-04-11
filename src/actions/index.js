@@ -3,5 +3,10 @@ const DISPLAYCOUNTRIES = countries => ({
   countries,
 });
 
+const FILTER = word => ({
+  type: 'CHANGE FILTER',
+  word,
+});
 
-export default DISPLAYCOUNTRIES;
+
+export { DISPLAYCOUNTRIES, FILTER };
