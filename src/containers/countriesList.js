@@ -25,7 +25,7 @@ const CountriesList = ({ addCountries, countries, filter }) => {
   }, [addCountries]);
   const selected = () => {
     if (filter !== '') {
-      const searchPattern = new RegExp('^' + filter,'i');
+      const searchPattern = new RegExp(`^${filter}`, 'i');
       return countries.filter(name => searchPattern.test(name.country));
     }
     return countries;
