@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
@@ -7,7 +8,7 @@ const mapStateToProps = state => ({
 });
 
 const finder = (name, countries) => {
-  const x = countries.find(country => country.country == name);
+  const x = countries.find(country => country.country === name);
   return x;
 };
 
@@ -55,4 +56,12 @@ const CountryInfo = ({ match, countries }) => {
   );
 };
 
+CountryInfo.propTypes = {
+  countries: PropTypes.arrayOf(PropTypes.object).isRequired,
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+    }),
+  }).isRequired,
+};
 export default connect(mapStateToProps)(CountryInfo);
