@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { DISPLAYCOUNTRIES } from '../actions';
 import track from '../apis';
 import ListCountry from '../components/showCountries';
@@ -37,6 +38,12 @@ const CountriesList = ({ addCountries, countries, filter }) => {
       {list}
     </div>
   );
+};
+
+CountriesList.propTypes = {
+  countries: PropTypes.arrayOf(PropTypes.object).isRequired,
+  filter: PropTypes.string.isRequired,
+  addCountries: PropTypes.func.isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(CountriesList);

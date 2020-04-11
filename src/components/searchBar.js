@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { FILTER } from '../actions';
 
@@ -14,6 +15,10 @@ const SearchBar = ({ filter }) => {
       <input placeholder="Search for a country here" onChange={e => updateFilter(e)} />
     </div>
   );
+};
+
+SearchBar.propTypes = {
+  filter: PropTypes.string.isRequired,
 };
 
 export default connect(null, mapDispatchToProps)(SearchBar);

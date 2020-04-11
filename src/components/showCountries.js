@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const ListCountry = ({ country }) => (
@@ -13,5 +14,14 @@ const ListCountry = ({ country }) => (
 
   </div>
 );
+
+ListCountry.propTypes = {
+  country: PropTypes.shape({
+    country: PropTypes.string.isRequired,
+    countryInfo: PropTypes.shape({
+      iso2: PropTypes.string.isRequired,
+    }),
+  }).isRequired,
+};
 
 export default ListCountry;
