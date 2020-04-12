@@ -48,6 +48,7 @@ CountriesList.propTypes = {
   countries: PropTypes.arrayOf(PropTypes.object).isRequired,
   filter: PropTypes.string.isRequired,
   addCountries: PropTypes.func.isRequired,
+  reset: PropTypes.func.isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(CountriesList);
