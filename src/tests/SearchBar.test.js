@@ -4,7 +4,6 @@ import '@testing-library/jest-dom/extend-expect';
 import { MemoryRouter } from 'react-router-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import renderer from 'react-test-renderer';
 import SearchBar from '../components/searchBar';
 import rootReducer from '../reducers';
 
@@ -32,5 +31,4 @@ it('takes the input value of state', () => {
     </MemoryRouter>, div,
   );
   expect(getByTestId('input').value).toBe('');
-  //console.log(store.getState());
 });
