@@ -17,7 +17,9 @@ const mapStateToProps = state => ({
   filter: state.filter,
 });
 
-const CountriesList = ({ addCountries, countries, filter, reset }) => {
+const CountriesList = ({
+  addCountries, countries, filter, reset,
+}) => {
   useEffect(() => {
     reset('');
     async function fetchData() {
