@@ -19,7 +19,7 @@ ListCountry.propTypes = {
   country: PropTypes.shape({
     country: PropTypes.string.isRequired,
     countryInfo: PropTypes.shape({
-      iso2: PropTypes.string.isRequired,
+      iso2: PropTypes.string,
     }),
   }).isRequired,
 };

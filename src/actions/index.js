@@ -8,5 +8,10 @@ const FILTER = word => ({
   word,
 });
 
+const RESET = word => ({
+  type: 'RESET',
+  word,
+});
 
-export { DISPLAYCOUNTRIES, FILTER };
+
+export { DISPLAYCOUNTRIES, FILTER, RESET };

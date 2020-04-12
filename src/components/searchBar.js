@@ -18,7 +18,7 @@ const SearchBar = ({ filter }) => {
 };
 
 SearchBar.propTypes = {
-  filter: PropTypes.string.isRequired,
+  filter: PropTypes.func.isRequired,
 };
 
 export default connect(null, mapDispatchToProps)(SearchBar);

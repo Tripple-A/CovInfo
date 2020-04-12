@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { DISPLAYCOUNTRIES } from '../actions';
+import { DISPLAYCOUNTRIES, RESET } from '../actions';
 import track from '../apis';
 import ListCountry from '../components/showCountries';
 import SearchBar from '../components/searchBar';
@@ -9,6 +9,7 @@ import SearchBar from '../components/searchBar';
 
 const mapDispatchToProps = dispatch => ({
   addCountries: countries => dispatch(DISPLAYCOUNTRIES(countries)),
+  reset: word => dispatch(RESET(word)),
 });
 
 const mapStateToProps = state => ({
@@ -16,8 +17,9 @@ const mapStateToProps = state => ({
   filter: state.filter,
 });
 
-const CountriesList = ({ addCountries, countries, filter }) => {
+const CountriesList = ({ addCountries, countries, filter, reset }) => {
   useEffect(() => {
+    reset('');
     async function fetchData() {
       await track.countries()
         .then(resp => addCountries(resp));
