@@ -7,9 +7,13 @@ const ListCountry = ({ country }) => (
   <div>
 
     <Link to={`/covinfo/${country.country}`}>
-      <div>
+      <div className="country">
+        <div className="flag">
         <img src={`https://www.countryflags.io/${country.countryInfo.iso2}/flat/64.png`} alt="country-flag" />
-        <h3 data-testid="name">{country.country}</h3>
+        </div>
+        <div className="country-name">
+          <h3 data-testid="name">{country.country}</h3>
+        </div>
       </div>
     </Link>
 

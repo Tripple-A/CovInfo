@@ -1,18 +1,96 @@
+body{
+    overflow-x: hidden;;
+}
 .jumbotron{
     background-color: rgb(23,25,37);
     color:white;
     font-size: 20px;
 }
 
-.info{
+.info, .country{
     color:#A1A5F6
 }
 .logo{
     font-size: 30px;
     font-weight: bold;
 }
+.search{
+  width: 100%;
+  position: -webkit-sticky;
+  position:sticky;
+  top:0px;
+  background-color: white;
+  padding:10px;
+}
 
 .form-control{
     width:60%;
     margin:0px auto;
+    border:1px solid grey;
 }
+
+.card-body{
+  color:#A1A5F6;
+  text-align: center;
+}
+
+img, .country, .flag{
+    width: 200px;
+    height:150px;
+}
+
+
+.country{
+    text-align: center;
+}
+
+.list{
+    margin-top:20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.country-name{
+    border:1px solid grey;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+    margin:7px;
+    margin-top:-29px;
+    margin-bottom:10px;
+}
+
+.country-name h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 170px;
+  }
+  
+
+
+@media screen and (max-width: 330px) {
+    .form-control {
+     width: 80%;
+    }
+  }
+
+@media screen and (max-width: 780px) {
+   .list{
+       grid-template-columns: 1fr 1fr 1fr;
+   }
+}
+
+@media screen and (max-width: 470px) {
+    .list{
+        grid-template-columns: 1fr 1fr ;
+    }
+ }
+
+ @media screen and (max-width: 380px) {
+    .list{
+        grid-template-columns: 1fr ;
+    }
+ }

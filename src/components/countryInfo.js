@@ -25,7 +25,7 @@ const CountryInfo = ({ match, countries }) => {
         {country.cases}
       </h5>
       <h5>
-        Today's Cases:
+        Today&apos;s Cases:
         {country.todayCases}
       </h5>
       <h5>
@@ -33,7 +33,7 @@ const CountryInfo = ({ match, countries }) => {
         {country.deaths}
       </h5>
       <h5>
-        Today's Deaths:
+        Today&apos;s Deaths:
         {country.todayDeaths}
       </h5>
       <h5>

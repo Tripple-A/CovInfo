@@ -39,7 +39,10 @@ const CountriesList = ({
   return (
     <div>
       <SearchBar />
+      <div className="list">
       {list}
+      </div>
+     
     </div>
   );
 };

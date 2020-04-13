@@ -9,7 +9,7 @@ import '../styles/style.css';
 function App() {
   return (
     <BrowserRouter>
-      <div className="jumbotron px-5">
+      <div className="jumbotron">
       <ul class="nav">
   <li class="nav-item logo">
     Cov:<span className="info">:Info </span>
