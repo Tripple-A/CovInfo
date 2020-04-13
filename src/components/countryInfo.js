@@ -17,56 +17,56 @@ const CountryInfo = ({ match, countries }) => {
 
   return (
     <div>
-    <div className="country-info">
-      <img src={`https://www.countryflags.io/${country.countryInfo.iso2}/flat/64.png`} alt="country-flag" />
-      <h1>{country.country}</h1>
-    </div>
-    <div className="cases">
-      <h5>
-        Total Cases:
-        {country.cases}
-      </h5>
-      <h5>
-        <span className="red">Today&apos;s Cases: </span>
-        {country.todayCases}
-      </h5>
+      <div className="country-info">
+        <img src={`https://www.countryflags.io/${country.countryInfo.iso2}/flat/64.png`} alt="country-flag" />
+        <h1>{country.country}</h1>
       </div>
       <div className="cases">
-      <h5>
-        <span className="red">Total Deaths: </span>
-        {country.deaths}
-      </h5>
-      <h5>
-       <span className="red"> Today&apos;s Deaths: </span>
-        {country.todayDeaths}
-      </h5>
+        <h5>
+          Total Cases:
+          {country.cases}
+        </h5>
+        <h5>
+          <span className="red">Today&apos;s Cases: </span>
+          {country.todayCases}
+        </h5>
       </div>
       <div className="cases">
-      <h5>
-       <span className="green"> Cases Recovered: </span>
-        {country.recovered}
-      </h5>
-      <h5>
-        Active Cases:
-        {country.active}
-      </h5>
+        <h5>
+          <span className="red">Total Deaths: </span>
+          {country.deaths}
+        </h5>
+        <h5>
+          <span className="red"> Today&apos;s Deaths: </span>
+          {country.todayDeaths}
+        </h5>
       </div>
       <div className="cases">
-      <h5>
-       <span className="red"> Critical Cases: </span>
-        {country.critical}
-      </h5>
-      <h5>
-        <span className="green">Tests Carried Out: </span>
-        {country.tests}
-      </h5>
+        <h5>
+          <span className="green"> Cases Recovered: </span>
+          {country.recovered}
+        </h5>
+        <h5>
+          Active Cases:
+          {country.active}
+        </h5>
+      </div>
+      <div className="cases">
+        <h5>
+          <span className="red"> Critical Cases: </span>
+          {country.critical}
+        </h5>
+        <h5>
+          <span className="green">Tests Carried Out: </span>
+          {country.tests}
+        </h5>
       </div>
       <Link to="/">
         <div className="cases">
-      <button type="button" className="btn btn-primary">Home</button>
-      </div> 
-       </Link>
-       </div>
+          <button type="button" className="btn btn-primary">Home</button>
+        </div>
+      </Link>
+    </div>
   );
 };
 

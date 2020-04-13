@@ -10,14 +10,15 @@ function App() {
   return (
     <BrowserRouter>
       <div className="jumbotron">
-      <ul class="nav">
-  <li class="nav-item logo">
-    Cov:<span className="info">:Info </span>
-  </li>
-  <li class="nav-item ml-auto mt-2">
-    Get the latest Covid-19 stats here
-  </li>
-</ul>
+        <ul className="nav">
+          <li className="nav-item logo">
+            Cov:
+            <span className="info">:Info </span>
+          </li>
+          <li className="nav-item ml-auto mt-2">
+            Get the latest Covid-19 stats here
+          </li>
+        </ul>
       </div>
       <Switch>
         <Route path="/" exact component={CountriesList} />
