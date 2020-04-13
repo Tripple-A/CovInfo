@@ -1,0 +1,18 @@
+.jumbotron{
+    background-color: rgb(23,25,37);
+    color:white;
+    font-size: 20px;
+}
+
+.info{
+    color:#A1A5F6
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form-control{
+    width:60%;
+    margin:0px auto;
+}
