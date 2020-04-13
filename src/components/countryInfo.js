@@ -17,42 +17,56 @@ const CountryInfo = ({ match, countries }) => {
 
   return (
     <div>
-      <Link to="/"> Home </Link>
+    <div className="country-info">
       <img src={`https://www.countryflags.io/${country.countryInfo.iso2}/flat/64.png`} alt="country-flag" />
       <h1>{country.country}</h1>
+    </div>
+    <div className="cases">
       <h5>
         Total Cases:
         {country.cases}
       </h5>
       <h5>
-        Today&apos;s Cases:
+        <span className="red">Today&apos;s Cases: </span>
         {country.todayCases}
       </h5>
+      </div>
+      <div className="cases">
       <h5>
-        Total Deaths:
+        <span className="red">Total Deaths: </span>
         {country.deaths}
       </h5>
       <h5>
-        Today&apos;s Deaths:
+       <span className="red"> Today&apos;s Deaths: </span>
         {country.todayDeaths}
       </h5>
+      </div>
+      <div className="cases">
       <h5>
-        Cases Recovered:
+       <span className="green"> Cases Recovered: </span>
         {country.recovered}
       </h5>
       <h5>
         Active Cases:
         {country.active}
       </h5>
+      </div>
+      <div className="cases">
       <h5>
-        Critical Cases:
+       <span className="red"> Critical Cases: </span>
         {country.critical}
       </h5>
       <h5>
-        Tests Carried Out:
+        <span className="green">Tests Carried Out: </span>
         {country.tests}
       </h5>
-    </div>
+      </div>
+      <Link to="/">
+        <div className="cases">
+      <button type="button" className="btn btn-primary">Home</button>
+      </div> 
+       </Link>
+       </div>
   );
 };
 

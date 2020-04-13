@@ -40,9 +40,8 @@ const CountriesList = ({
     <div>
       <SearchBar />
       <div className="list">
-      {list}
+        {list}
       </div>
-     
     </div>
   );
 };
