@@ -39,6 +39,11 @@ img, .country, .flag{
     height:150px;
 }
 
+img{
+    width:150px;
+    height:100px;
+}
+
 
 .country{
     text-align: center;
@@ -58,7 +63,7 @@ img, .country, .flag{
     border-bottom-left-radius:5px ;
     border-bottom-right-radius:5px ;
     margin:7px;
-    margin-top:-29px;
+    margin-top:-50px;
     margin-bottom:10px;
 }
 
@@ -98,26 +103,6 @@ img, .country, .flag{
     flex-direction: column;
 }
 
-.cases{
-    display: flex;
-    width:60%;
-    margin:0px auto;
-    justify-content: center;
-    text-align: left;
-    font-family: fantasy;
-}
-
-.cases h5{
-    padding:7%;
-}
-
-.green{
-    color:green;
-}
-
-.red{
-    color:red;
-}
 
 .btn{
     background-color: rgb(98, 121, 107);

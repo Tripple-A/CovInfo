@@ -1,0 +1,20 @@
+.cases{
+    display: flex;
+    width:60%;
+    margin:0px auto;
+    justify-content: center;
+    text-align: left;
+    font-family: fantasy;
+}
+
+.cases h5{
+    padding:7%;
+}
+
+.green{
+    color:green;
+}
+
+.red{
+    color:red;
+}

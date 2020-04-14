@@ -32,3 +32,6 @@ it('takes the input value of state', () => {
   );
   expect(getByTestId('input').value).toBe('');
 });
+
+
+export default renderWithRedux;

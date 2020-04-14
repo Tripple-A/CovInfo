@@ -6,16 +6,26 @@ exports[`matches snapshot 1`] = `
     href="/covinfo/France"
     onClick={[Function]}
   >
-    <div>
-      <img
-        alt="country-flag"
-        src="https://www.countryflags.io/FR/flat/64.png"
-      />
-      <h3
-        data-testid="name"
+    <div
+      className="country"
+    >
+      <div
+        className="flag"
       >
-        France
-      </h3>
+        <img
+          alt="country-flag"
+          src="https://www.countryflags.io/FR/flat/64.png"
+        />
+      </div>
+      <div
+        className="country-name"
+      >
+        <h3
+          data-testid="name"
+        >
+          France
+        </h3>
+      </div>
     </div>
   </a>
 </div>
