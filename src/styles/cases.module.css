@@ -34,14 +34,20 @@ h1{
 }
 
 @media screen and (max-width: 470px) {
+    .first{
+        padding-right: 0px;
+        width:100vw;
+    }
+
     .cases{
         display:grid;
         width:100%;
-        justify-content: center;
+        justify-content: left;
     }
     .cases h5{
         padding:0px;
         padding: 7px 0;
-        padding-left:10px;
+        margin-left:20%;
     }
+    
 }
