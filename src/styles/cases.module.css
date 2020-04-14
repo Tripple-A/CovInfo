@@ -1,14 +1,28 @@
 .cases{
     display: flex;
-    width:60%;
+    width:80%;
     margin:0px auto;
     justify-content: center;
     text-align: left;
     font-family: fantasy;
 }
 
+h1{
+    font-family: fantasy;
+    text-align: center;
+    padding-bottom: 20px;  
+}
+
+.first{
+  padding-right:10%;
+}
+
 .cases h5{
-    padding:7%;
+    padding-bottom:20%
+}
+
+.btn{
+    text-align: center;;
 }
 
 .green{
@@ -17,4 +31,17 @@
 
 .red{
     color:red;
+}
+
+@media screen and (max-width: 470px) {
+    .cases{
+        display:grid;
+        width:100%;
+        justify-content: center;
+    }
+    .cases h5{
+        padding:0px;
+        padding: 7px 0;
+        padding-left:10px;
+    }
 }

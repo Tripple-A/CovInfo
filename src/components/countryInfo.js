@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import style from '../styles/cases.module.css';
 import track from '../apis';
 
 
-const mapStateToProps = state => ({
-  countries: state.countries,
-});
-
-
-const CountryInfo = ({match}) => {
+const CountryInfo = ({ match }) => {
   const [country, setCountry] = useState({});
   useEffect(() => {
     async function fetchData() {
@@ -20,19 +14,64 @@ const CountryInfo = ({match}) => {
     }
     fetchData();
   }, [match]);
-  console.log(country.countryInfo);
+
   return (
     <div>
-      {country.country}
+      <h1 className={style.h1}>{country.country}</h1>
+      <div className={style.cases}>
+        <div className={style.first}>
+          <h5>
+            Total Cases:
+            {country.cases}
+          </h5>
+          <h5>
+            <span className={style.red}>Total Deaths: </span>
+            {country.deaths}
+          </h5>
+          <h5>
+            <span className={style.red}>Today's Cases:</span>
+            {country.todayCases}
+          </h5>
+          <h5>
+            <span className={style.green}> Cases recovered: </span>
+            {country.recovered}
+          </h5>
+        </div>
+        <div>
+          <h5>
+            <span className={style.red}>Today's Deaths: </span>
+            {country.todayDeaths}
+          </h5>
+
+          <h5>
+            Active Cases:
+            {country.active}
+          </h5>
+          <h5>
+            <span className={style.green}>Tests Carried Out: </span>
+            {country.tests}
+          </h5>
+          <h5>
+            <span className={style.red}>Critical Cases: </span>
+            {country.critical}
+          </h5>
+        </div>
+      </div>
+      <div className={style.btn}>
+        <Link to="/">
+          {' '}
+          <button type="button" className="btn btn-primary">Back</button>
+          {' '}
+        </Link>
+      </div>
     </div>
   );
 };
 CountryInfo.propTypes = {
-  countries: PropTypes.arrayOf(PropTypes.object).isRequired,
   match: PropTypes.shape({
     params: PropTypes.shape({
       name: PropTypes.string.isRequired,
     }),
   }).isRequired,
 };
-export default connect(mapStateToProps)(CountryInfo);
+export default CountryInfo;
