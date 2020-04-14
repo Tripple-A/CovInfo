@@ -29,7 +29,7 @@ const CountryInfo = ({ match }) => {
             {country.deaths}
           </h5>
           <h5>
-            <span className={style.red}>Today's Cases:</span>
+            <span className={style.red}>`Today&apos;s` Cases:</span>
             {country.todayCases}
           </h5>
           <h5>
@@ -39,7 +39,7 @@ const CountryInfo = ({ match }) => {
         </div>
         <div>
           <h5>
-            <span className={style.red}>Today's Deaths: </span>
+            <span className={style.red}>`Today&apos;s` Deaths: </span>
             {country.todayDeaths}
           </h5>
 
