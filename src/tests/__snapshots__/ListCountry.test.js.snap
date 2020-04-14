@@ -14,7 +14,6 @@ exports[`matches snapshot 1`] = `
       >
         <img
           alt="country-flag"
-          src="https://www.countryflags.io/FR/flat/64.png"
         />
       </div>
       <div

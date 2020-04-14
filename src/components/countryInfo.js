@@ -20,7 +20,7 @@ const CountryInfo = ({ match }) => {
       <h1 className={style.h1}>{country.country}</h1>
       <div className={style.cases}>
         <div className={style.first}>
-          <h5>
+          <h5 data-testid="total">
             Total Cases:
             {country.cases}
           </h5>

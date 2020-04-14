@@ -10,7 +10,10 @@
 h1{
     font-family: fantasy;
     text-align: center;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+    width:60%;
+    border-bottom: 1px solid grey; 
+    margin:0px auto;
 }
 
 .first{

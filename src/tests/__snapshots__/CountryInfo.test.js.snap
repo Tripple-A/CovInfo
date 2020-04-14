@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1 1`] = `
+<div>
+  <h1
+    className="h1"
+  />
+  <div
+    className="cases"
+  >
+    <div
+      className="first"
+    >
+      <h5
+        data-testid="total"
+      >
+        Total Cases:
+      </h5>
+      <h5>
+        <span
+          className="red"
+        >
+          Total Deaths: 
+        </span>
+      </h5>
+      <h5>
+        <span
+          className="red"
+        >
+          \`Today's\` Cases:
+        </span>
+      </h5>
+      <h5>
+        <span
+          className="green"
+        >
+           Cases recovered: 
+        </span>
+      </h5>
+    </div>
+    <div>
+      <h5>
+        <span
+          className="red"
+        >
+          \`Today's\` Deaths: 
+        </span>
+      </h5>
+      <h5>
+        Active Cases:
+      </h5>
+      <h5>
+        <span
+          className="green"
+        >
+          Tests Carried Out: 
+        </span>
+      </h5>
+      <h5>
+        <span
+          className="red"
+        >
+          Critical Cases: 
+        </span>
+      </h5>
+    </div>
+  </div>
+  <div
+    className="btn"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+       
+      <button
+        className="btn btn-primary"
+        type="button"
+      >
+        Back
+      </button>
+       
+    </a>
+  </div>
+</div>
+`;
