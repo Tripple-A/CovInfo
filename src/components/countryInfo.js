@@ -37,7 +37,7 @@ const CountryInfo = ({ match }) => {
             <span className={style.num}> {country.recovered} </span>
           </h5>
         </div>
-        <div>
+        <div className={style.second}>
           <h5 className={style.odd}>
             <span className={style.red}>Today&apos;s Deaths: </span>
             <span className={style.num}>{country.todayDeaths}</span>
@@ -45,7 +45,11 @@ const CountryInfo = ({ match }) => {
 
           <h5 className={style.even}>
             Active Cases:
-            <span className={style.num}> {country.active} </span>
+            <span className={style.num}>
+              {' '}
+              {country.active}
+              {' '}
+            </span>
           </h5>
           <h5 className={style.odd}>
             <span className={style.green}>Tests Carried Out: </span>

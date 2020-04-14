@@ -1,6 +1,6 @@
 .cases{
     display: flex;
-    width:80%;
+    width:100%;
     margin:0px auto;
     justify-content: center;
     text-align: left;
@@ -16,9 +16,21 @@ h1{
     margin:0px auto;
 }
 
-.first{
-  padding-right:10%;
+.first, .second{
+  padding-left:5%;
+  padding-right:5%;
+  padding-top: 5%;
+  background-color: rgb(187, 189, 212);
 }
+
+.second{
+    background-color:#A1A5F6;
+}
+
+.num{
+    float: right;
+    margin-right:60px;
+   }
 
 .cases h5{
     padding-bottom:20%;
@@ -34,6 +46,13 @@ h1{
     .first{
         padding-right: 0px;
         width:100vw;
+        background-color: white;
+    }
+
+    .second, .first{
+        background-color: white;
+        padding-left:0;
+        padding-right:0;
     }
 
     .num{
