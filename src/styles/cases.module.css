@@ -21,20 +21,14 @@ h1{
 }
 
 .cases h5{
-    padding-bottom:20%
+    padding-bottom:20%;
 }
 
 .btn{
-    text-align: center;;
+    text-align: center;
+    margin-top:20px;
 }
 
-.green{
-    color:green;
-}
-
-.red{
-    color:red;
-}
 
 @media screen and (max-width: 470px) {
     .first{
@@ -42,6 +36,18 @@ h1{
         width:100vw;
     }
 
+    .num{
+     float: right;
+     margin-right:15px
+    }
+
+    .odd{
+        background-color: rgb(187, 189, 212);
+    }
+
+    .even{
+        background-color: #A1A5F6;
+    }
     .cases{
         display:grid;
         width:100%;
@@ -50,7 +56,7 @@ h1{
     .cases h5{
         padding:0px;
         padding: 7px 0;
-        margin-left:20%;
+        padding-left:5%;
     }
     
 }

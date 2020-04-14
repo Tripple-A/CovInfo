@@ -20,40 +20,40 @@ const CountryInfo = ({ match }) => {
       <h1 className={style.h1}>{country.country}</h1>
       <div className={style.cases}>
         <div className={style.first}>
-          <h5 data-testid="total">
+          <h5 data-testid="total" className={style.odd}>
             Total Cases:
-            {country.cases}
+           <span className={style.num}>{country.cases}</span>
           </h5>
-          <h5>
+          <h5 className={style.even}>
             <span className={style.red}>Total Deaths: </span>
-            {country.deaths}
+            <span className={style.num}>{country.deaths}</span>
           </h5>
-          <h5>
-            <span className={style.red}>`Today&apos;s` Cases:</span>
-            {country.todayCases}
+          <h5 className={style.odd}>
+            <span className={style.red}>Today&apos;s Cases:</span>
+            <span className={style.num}>{country.todayCases}</span>
           </h5>
-          <h5>
+          <h5 className={style.even}>
             <span className={style.green}> Cases recovered: </span>
-            {country.recovered}
+            <span className={style.num}> {country.recovered} </span>
           </h5>
         </div>
         <div>
-          <h5>
-            <span className={style.red}>`Today&apos;s` Deaths: </span>
-            {country.todayDeaths}
+          <h5 className={style.odd}>
+            <span className={style.red}>Today&apos;s Deaths: </span>
+            <span className={style.num}>{country.todayDeaths}</span>
           </h5>
 
-          <h5>
+          <h5 className={style.even}>
             Active Cases:
-            {country.active}
+            <span className={style.num}> {country.active} </span>
           </h5>
-          <h5>
+          <h5 className={style.odd}>
             <span className={style.green}>Tests Carried Out: </span>
-            {country.tests}
+            <span className={style.num}>{country.tests}</span>
           </h5>
-          <h5>
+          <h5 className={style.even}>
             <span className={style.red}>Critical Cases: </span>
-            {country.critical}
+            <span className={style.num}>{country.critical}</span>
           </h5>
         </div>
       </div>
