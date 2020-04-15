@@ -81,7 +81,7 @@ exports[`matches snapshot 1 1`] = `
         />
       </h5>
       <h5
-        className="odd"
+        className="even"
       >
         <span
           className="red"
@@ -93,7 +93,7 @@ exports[`matches snapshot 1 1`] = `
         />
       </h5>
       <h5
-        className="even"
+        className="odd"
       >
         <span
           className="green"

@@ -50,11 +50,11 @@ const CountryInfo = ({ match }) => {
             <span className={style.num}>{country.todayCases}</span>
           </h5>
 
-          <h5 className={style.odd}>
+          <h5 className={style.even}>
             <span className={style.red}>Today&apos;s Deaths: </span>
             <span className={style.num}>{country.todayDeaths}</span>
           </h5>
-          <h5 className={style.even}>
+          <h5 className={style.odd}>
             <span className={style.green}> Recovered: </span>
             <span className={style.num}>
               {' '}
