@@ -15,6 +15,7 @@ const CountryInfo = ({ match }) => {
     fetchData();
   }, [match]);
 
+  const testsDone = country.tests === 0 ? 'Unknown' : country.tests;
   return (
     <div>
       <div className={style.flexi}>
@@ -31,10 +32,6 @@ const CountryInfo = ({ match }) => {
             <span className={style.red}>Total Deaths: </span>
             <span className={style.num}>{country.deaths}</span>
           </h5>
-          <h5 className={style.odd}>
-            <span className={style.green}>Total Tests: </span>
-            <span className={style.num}>{country.tests}</span>
-          </h5>
           <h5 className={style.even}>
             Active Cases:
             <span className={style.num}>
@@ -42,6 +39,10 @@ const CountryInfo = ({ match }) => {
               {country.active}
               {' '}
             </span>
+          </h5>
+          <h5 className={style.odd}>
+            <span className={style.green}>Total Tests: </span>
+            <span className={style.num}>{testsDone}</span>
           </h5>
         </div>
         <div className={style.second}>
@@ -54,6 +55,10 @@ const CountryInfo = ({ match }) => {
             <span className={style.red}>Today&apos;s Deaths: </span>
             <span className={style.num}>{country.todayDeaths}</span>
           </h5>
+          <h5 className={style.even}>
+            <span className={style.red}>Critical Cases: </span>
+            <span className={style.num}>{country.critical}</span>
+          </h5>
           <h5 className={style.odd}>
             <span className={style.green}> Recovered: </span>
             <span className={style.num}>
@@ -61,12 +66,6 @@ const CountryInfo = ({ match }) => {
               {country.recovered}
               {' '}
             </span>
-          </h5>
-
-
-          <h5 className={style.even}>
-            <span className={style.red}>Critical Cases: </span>
-            <span className={style.num}>{country.critical}</span>
           </h5>
         </div>
       </div>

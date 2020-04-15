@@ -42,6 +42,17 @@ exports[`matches snapshot 1 1`] = `
         />
       </h5>
       <h5
+        className="even"
+      >
+        Active Cases:
+        <span
+          className="num"
+        >
+           
+           
+        </span>
+      </h5>
+      <h5
         className="odd"
       >
         <span
@@ -52,17 +63,6 @@ exports[`matches snapshot 1 1`] = `
         <span
           className="num"
         />
-      </h5>
-      <h5
-        className="even"
-      >
-        Active Cases:
-        <span
-          className="num"
-        >
-           
-           
-        </span>
       </h5>
     </div>
     <div
@@ -93,6 +93,18 @@ exports[`matches snapshot 1 1`] = `
         />
       </h5>
       <h5
+        className="even"
+      >
+        <span
+          className="red"
+        >
+          Critical Cases: 
+        </span>
+        <span
+          className="num"
+        />
+      </h5>
+      <h5
         className="odd"
       >
         <span
@@ -106,18 +118,6 @@ exports[`matches snapshot 1 1`] = `
            
            
         </span>
-      </h5>
-      <h5
-        className="even"
-      >
-        <span
-          className="red"
-        >
-          Critical Cases: 
-        </span>
-        <span
-          className="num"
-        />
       </h5>
     </div>
   </div>
