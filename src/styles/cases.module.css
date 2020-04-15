@@ -42,7 +42,7 @@ h1{
 }
 .num{
     float: right;
-    margin-right:60px;
+    padding-left:30px;
    }
 
 .cases h5{
@@ -68,7 +68,7 @@ h1{
 
     .num{
      float: right;
-     margin-right:15px
+     margin-right:25px
     }
 
     .odd{
