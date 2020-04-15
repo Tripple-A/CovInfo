@@ -17,7 +17,10 @@ const CountryInfo = ({ match }) => {
 
   return (
     <div>
-      <h1 className={style.h1}>{country.country}</h1>
+      <div className={style.flexi}>
+        <img className={style.img} alt="covid19-logo" src="https://images.unsplash.com/photo-1584573062918-ad06605b3635?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" />
+        <h1 className={style.h1}>{country.country}</h1>
+      </div>
       <div className={style.cases}>
         <div className={style.first}>
           <h5 data-testid="total" className={style.odd}>
@@ -29,7 +32,7 @@ const CountryInfo = ({ match }) => {
             <span className={style.num}>{country.deaths}</span>
           </h5>
           <h5 className={style.odd}>
-            <span className={style.green}>Tests Carried Out: </span>
+            <span className={style.green}>Total Tests: </span>
             <span className={style.num}>{country.tests}</span>
           </h5>
           <h5 className={style.even}>
@@ -42,7 +45,7 @@ const CountryInfo = ({ match }) => {
           </h5>
         </div>
         <div className={style.second}>
-        <h5 className={style.odd}>
+          <h5 className={style.odd}>
             <span className={style.red}>Today&apos;s Cases:</span>
             <span className={style.num}>{country.todayCases}</span>
           </h5>
@@ -52,15 +55,15 @@ const CountryInfo = ({ match }) => {
             <span className={style.num}>{country.todayDeaths}</span>
           </h5>
           <h5 className={style.even}>
-            <span className={style.green}> Cases recovered: </span>
+            <span className={style.green}> Recovered: </span>
             <span className={style.num}>
               {' '}
               {country.recovered}
               {' '}
             </span>
           </h5>
-         
-         
+
+
           <h5 className={style.even}>
             <span className={style.red}>Critical Cases: </span>
             <span className={style.num}>{country.critical}</span>

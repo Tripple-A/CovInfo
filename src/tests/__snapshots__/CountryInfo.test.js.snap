@@ -2,9 +2,18 @@
 
 exports[`matches snapshot 1 1`] = `
 <div>
-  <h1
-    className="h1"
-  />
+  <div
+    className="flexi"
+  >
+    <img
+      alt="covid19-logo"
+      className="img"
+      src="https://images.unsplash.com/photo-1584573062918-ad06605b3635?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+    />
+    <h1
+      className="h1"
+    />
+  </div>
   <div
     className="cases"
   >
@@ -12,56 +21,103 @@ exports[`matches snapshot 1 1`] = `
       className="first"
     >
       <h5
+        className="odd"
         data-testid="total"
       >
         Total Cases:
+        <span
+          className="num"
+        />
       </h5>
-      <h5>
+      <h5
+        className="even"
+      >
         <span
           className="red"
         >
           Total Deaths: 
         </span>
-      </h5>
-      <h5>
         <span
-          className="red"
-        >
-          \`Today's\` Cases:
-        </span>
+          className="num"
+        />
       </h5>
-      <h5>
+      <h5
+        className="odd"
+      >
         <span
           className="green"
         >
-           Cases recovered: 
+          Total Tests: 
+        </span>
+        <span
+          className="num"
+        />
+      </h5>
+      <h5
+        className="even"
+      >
+        Active Cases:
+        <span
+          className="num"
+        >
+           
+           
         </span>
       </h5>
     </div>
-    <div>
-      <h5>
+    <div
+      className="second"
+    >
+      <h5
+        className="odd"
+      >
         <span
           className="red"
         >
-          \`Today's\` Deaths: 
+          Today's Cases:
         </span>
+        <span
+          className="num"
+        />
       </h5>
-      <h5>
-        Active Cases:
+      <h5
+        className="odd"
+      >
+        <span
+          className="red"
+        >
+          Today's Deaths: 
+        </span>
+        <span
+          className="num"
+        />
       </h5>
-      <h5>
+      <h5
+        className="even"
+      >
         <span
           className="green"
         >
-          Tests Carried Out: 
+           Recovered: 
+        </span>
+        <span
+          className="num"
+        >
+           
+           
         </span>
       </h5>
-      <h5>
+      <h5
+        className="even"
+      >
         <span
           className="red"
         >
           Critical Cases: 
         </span>
+        <span
+          className="num"
+        />
       </h5>
     </div>
   </div>

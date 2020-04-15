@@ -33,6 +33,7 @@ This is an app that gives you up-to-date information on the covid-19 affected co
 * Redux Store
 * React Routers
 * Jest auto watch
+* Css Modules
 
 <!-- LIVE PREVIEW -->
 ## LIVE PREVIEW

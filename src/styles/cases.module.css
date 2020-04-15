@@ -10,10 +10,7 @@
 h1{
     font-family: fantasy;
     text-align: center;
-    padding-bottom: 20px;
-    width:60%;
-    border-bottom: 1px solid grey; 
-    margin:0px auto;
+    padding-top:20px;
 }
 
 .first, .second{
@@ -27,6 +24,22 @@ h1{
     background-color:#A1A5F6;
 }
 
+.img{
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+    margin-right:5%;
+}
+
+.flexi{
+    display:flex;
+    width:60%;
+    border-bottom: 1px solid grey; 
+    margin:0px auto;
+    justify-content: center;
+    padding-bottom:20px;
+    margin-bottom: 10px;
+}
 .num{
     float: right;
     margin-right:60px;
@@ -44,15 +57,13 @@ h1{
 
 @media screen and (max-width: 470px) {
     .first{
-        padding-right: 0px;
         width:100vw;
         background-color: white;
     }
 
     .second, .first{
         background-color: white;
-        padding-left:0;
-        padding-right:0;
+       padding:0;
     }
 
     .num{
