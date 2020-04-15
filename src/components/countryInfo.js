@@ -22,27 +22,16 @@ const CountryInfo = ({ match }) => {
         <div className={style.first}>
           <h5 data-testid="total" className={style.odd}>
             Total Cases:
-           <span className={style.num}>{country.cases}</span>
+            <span className={style.num}>{country.cases}</span>
           </h5>
           <h5 className={style.even}>
             <span className={style.red}>Total Deaths: </span>
             <span className={style.num}>{country.deaths}</span>
           </h5>
           <h5 className={style.odd}>
-            <span className={style.red}>Today&apos;s Cases:</span>
-            <span className={style.num}>{country.todayCases}</span>
+            <span className={style.green}>Tests Carried Out: </span>
+            <span className={style.num}>{country.tests}</span>
           </h5>
-          <h5 className={style.even}>
-            <span className={style.green}> Cases recovered: </span>
-            <span className={style.num}> {country.recovered} </span>
-          </h5>
-        </div>
-        <div className={style.second}>
-          <h5 className={style.odd}>
-            <span className={style.red}>Today&apos;s Deaths: </span>
-            <span className={style.num}>{country.todayDeaths}</span>
-          </h5>
-
           <h5 className={style.even}>
             Active Cases:
             <span className={style.num}>
@@ -51,10 +40,27 @@ const CountryInfo = ({ match }) => {
               {' '}
             </span>
           </h5>
-          <h5 className={style.odd}>
-            <span className={style.green}>Tests Carried Out: </span>
-            <span className={style.num}>{country.tests}</span>
+        </div>
+        <div className={style.second}>
+        <h5 className={style.odd}>
+            <span className={style.red}>Today&apos;s Cases:</span>
+            <span className={style.num}>{country.todayCases}</span>
           </h5>
+
+          <h5 className={style.odd}>
+            <span className={style.red}>Today&apos;s Deaths: </span>
+            <span className={style.num}>{country.todayDeaths}</span>
+          </h5>
+          <h5 className={style.even}>
+            <span className={style.green}> Cases recovered: </span>
+            <span className={style.num}>
+              {' '}
+              {country.recovered}
+              {' '}
+            </span>
+          </h5>
+         
+         
           <h5 className={style.even}>
             <span className={style.red}>Critical Cases: </span>
             <span className={style.num}>{country.critical}</span>

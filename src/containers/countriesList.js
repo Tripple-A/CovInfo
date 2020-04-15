@@ -27,7 +27,7 @@ const CountriesList = ({
         .then(resp => addCountries(resp));
     }
     fetchData();
-  }, [addCountries]);
+  }, [addCountries, reset]);
   const selected = () => {
     if (filter !== '') {
       const searchPattern = new RegExp(`^${filter}`, 'i');
