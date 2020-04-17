@@ -36,3 +36,4 @@
      border-radius: 6px;
      border: none;
     }
+    .marquee button:focus { outline:0 !important; }
