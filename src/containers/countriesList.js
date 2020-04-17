@@ -35,6 +35,7 @@ const CountriesList = ({
     }
     return countries;
   };
+  console.log(selected());
   const list = selected().map(country => <ListCountry country={country} key={country.country} />);
   return (
     <div>
