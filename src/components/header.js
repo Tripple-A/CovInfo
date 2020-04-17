@@ -47,6 +47,11 @@ Header.propTypes = {
   }).isRequired,
   total: PropTypes.shape({
     cases: PropTypes.number,
+    death: PropTypes.number,
+    recovered: PropTypes.number,
+    active: PropTypes.number,
+    deaths: PropTypes.number,
+    tests: PropTypes.number,
   }).isRequired,
   change: PropTypes.func.isRequired,
 };
