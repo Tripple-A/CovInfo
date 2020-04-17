@@ -5,6 +5,8 @@ body{
     background-color: rgb(23,25,37);
     color:white;
     font-size: 20px;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .info, .country{
@@ -110,6 +112,11 @@ img{
     margin-left: 10px;
 }
 
+.marquee{
+    position: absolute;
+    bottom: 0;
+}
+
 @media screen and (max-width: 330px) {
     .form-control {
      width: 80%;
@@ -138,6 +145,9 @@ img{
     }
     .info-country{
         width:80%;
+    }
+    .nav{
+        padding-bottom:20px;
     }
  }
 

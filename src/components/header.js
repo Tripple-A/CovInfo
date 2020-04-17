@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/marquee.css';
 
 const Header = ({ total, style, change }) => {
   const toggle = e => {
@@ -11,7 +12,7 @@ const Header = ({ total, style, change }) => {
   return (
     <div className="jumbotron">
       <ul className="nav">
-        <li className="nav-item logo">
+        <li className="nav-item logo" data-testid="cov">
           Cov:
           <span className="info">:Info </span>
         </li>
@@ -19,24 +20,26 @@ const Header = ({ total, style, change }) => {
           Get the latest Covid-19 stats here
         </li>
       </ul>
-      <p className="mt-5" style={style}>
-        Total Cases:
-        {total.cases}
-        {' '}
-        , Total Deaths:
-        {total.deaths}
-        {' '}
-        ,
-        Total Recovered:
-        {total.recovered}
-        {' '}
-        , Total Tests:
-        {total.tests}
-        {' '}
-        , Total Active:
-        {total.active}
-      </p>
-      <button type="button" onClick={e => toggle(e)}>Hide Stats</button>
+      <div className="marquee">
+        <button type="button" onClick={e => toggle(e)}>Hide Stats</button>
+        <p style={style}>
+          Total Cases:
+          {total.cases}
+          {' '}
+          , Total Deaths:
+          {total.deaths}
+          {' '}
+          ,
+          Total Recovered:
+          {total.recovered}
+          {' '}
+          , Total Tests:
+          {total.tests}
+          {' '}
+          , Total Active:
+          {total.active}
+        </p>
+      </div>
     </div>
   );
 };

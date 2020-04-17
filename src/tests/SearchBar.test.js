@@ -4,7 +4,7 @@ import '@testing-library/jest-dom/extend-expect';
 import { MemoryRouter } from 'react-router-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import SearchBar from '../components/searchBar';
+import SearchBar from '../containers/searchBar';
 import rootReducer from '../reducers';
 
 afterEach(cleanup);

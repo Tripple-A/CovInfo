@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="jumbotron"
+>
+  <ul
+    className="nav"
+  >
+    <li
+      className="nav-item logo"
+      data-testid="cov"
+    >
+      Cov:
+      <span
+        className="info"
+      >
+        :Info 
+      </span>
+    </li>
+    <li
+      className="nav-item ml-auto mt-2"
+    >
+      Get the latest Covid-19 stats here
+    </li>
+  </ul>
+  <div
+    className="marquee"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Hide Stats
+    </button>
+    <p
+      style={
+        Object {
+          "display": "block",
+        }
+      }
+    >
+      Total Cases:
+      2197161
+       
+      , Total Deaths:
+      147512
+       
+      , Total Recovered:
+      557617
+       
+      , Total Tests:
+      18507025
+       
+      , Total Active:
+      1492032
+    </p>
+  </div>
+</div>
+`;
