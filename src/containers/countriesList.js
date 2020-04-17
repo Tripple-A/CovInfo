@@ -29,7 +29,7 @@ const CountriesList = ({
     if (countries.length === 0) fetchData();
   }, [addCountries, reset, countries.length]);
   const selected = () => {
-    if (filter !== '') {
+    if (filter !== '' && filter.charCodeAt(filter.length - 1) !== 92) {
       const searchPattern = new RegExp(`^${filter}`, 'i');
       return countries.filter(name => searchPattern.test(name.country));
     }

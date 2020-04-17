@@ -12,7 +12,7 @@ const SearchBar = ({ filter }) => {
   };
   return (
     <div className="search">
-      <input className="form-control" data-testid="input" placeholder="Search for a country here" onChange={e => updateFilter(e)} />
+      <input type="search" className="form-control" data-testid="input" placeholder="Search for a country here" onChange={e => updateFilter(e)} />
     </div>
   );
 };
