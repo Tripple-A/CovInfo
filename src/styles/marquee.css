@@ -6,9 +6,9 @@
     margin-bottom:10px;
     }
   .marquee  p {
-    -moz-animation: marquee 10s linear infinite;
-    -webkit-animation: marquee 10s linear infinite;
-    animation: marquee 10s linear infinite;
+    -moz-animation: marquee 20s linear infinite;
+    -webkit-animation: marquee 20s linear infinite;
+    animation: marquee 20s linear infinite;
     }
     @-moz-keyframes marquee {
     0% { transform: translateX(100%); }
