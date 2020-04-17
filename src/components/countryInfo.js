@@ -1,19 +1,27 @@
 import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import style from '../styles/cases.module.css';
 import track from '../apis';
 
+const mapStateToProps = state => ({
+  countries: state.countries,
+});
 
-const CountryInfo = ({ match }) => {
+const CountryInfo = ({ match, countries }) => {
   const [country, setCountry] = useState({});
   useEffect(() => {
     async function fetchData() {
       await track.countries(match.params.name)
         .then(resp => setCountry(resp));
     }
-    fetchData();
-  }, [match]);
+    if (countries.length === 0) fetchData();
+    else {
+      const found = countries.find(country => country.country === match.params.name);
+      setCountry(found);
+    }
+  }, [match, countries]);
 
   const testsDone = country.tests === 0 ? 'Unknown' : country.tests;
   return (
@@ -80,10 +88,11 @@ const CountryInfo = ({ match }) => {
   );
 };
 CountryInfo.propTypes = {
+  countries: PropTypes.arrayOf(PropTypes.object).isRequired,
   match: PropTypes.shape({
     params: PropTypes.shape({
       name: PropTypes.string.isRequired,
     }),
   }).isRequired,
 };
-export default CountryInfo;
+export default connect(mapStateToProps)(CountryInfo);

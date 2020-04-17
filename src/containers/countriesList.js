@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { DISPLAYCOUNTRIES, RESET } from '../actions';
 import track from '../apis';
 import ListCountry from '../components/showCountries';
-import SearchBar from '../components/searchBar';
+import SearchBar from './searchBar';
 
 
 const mapDispatchToProps = dispatch => ({
@@ -26,8 +26,8 @@ const CountriesList = ({
       await track.countries()
         .then(resp => addCountries(resp));
     }
-    fetchData();
-  }, [addCountries, reset]);
+    if (countries.length === 0) fetchData();
+  }, [addCountries, reset, countries.length]);
   const selected = () => {
     if (filter !== '') {
       const searchPattern = new RegExp(`^${filter}`, 'i');
@@ -35,7 +35,6 @@ const CountriesList = ({
     }
     return countries;
   };
-  console.log(selected());
   const list = selected().map(country => <ListCountry country={country} key={country.country} />);
   return (
     <div>
