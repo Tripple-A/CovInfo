@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import style from '../styles/cases.module.css';
-import track from '../apis';
+import style from './cases.module.css';
+import track from '../../apis';
 
 const mapStateToProps = state => ({
   countries: state.countries,
