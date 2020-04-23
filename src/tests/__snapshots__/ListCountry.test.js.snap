@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div>
+  <a
+    href="/covinfo/France"
+    onClick={[Function]}
+  >
+    <div
+      className="country"
+    >
+      <div
+        className="flag"
+      >
+        <img
+          alt="country-flag"
+        />
+      </div>
+      <div
+        className="country-name"
+      >
+        <h3
+          data-testid="name"
+        >
+          France
+        </h3>
+      </div>
+    </div>
+  </a>
+</div>
+`;

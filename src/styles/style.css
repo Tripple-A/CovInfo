@@ -1,0 +1,158 @@
+body{
+    overflow-x: hidden;;
+}
+.jumbotron{
+    background-color: rgb(23,25,37);
+    color:white;
+    font-size: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.info, .country{
+    color:#A1A5F6
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+.search{
+  width: 100%;
+  position: -webkit-sticky;
+  position:sticky;
+  top:0px;
+  background-color: white;
+  padding:10px;
+}
+
+.form-control{
+    width:60%;
+    margin:0px auto;
+    border:1px solid grey;
+}
+
+.card-body{
+  color:#A1A5F6;
+  text-align: center;
+}
+
+img, .country, .flag{
+    width: 200px;
+    height:150px;
+}
+
+img{
+    width:150px;
+    height:100px;
+}
+
+
+.country{
+    text-align: center;
+}
+
+.list{
+    margin-top:20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.country-name{
+    border:1px solid grey;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+    margin:7px;
+    margin-top:-50px;
+    margin-bottom:10px;
+}
+
+.country-name h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 170px;
+  }
+  
+.country-info{
+    display:flex;
+    margin:0px auto;
+    border-bottom: 1px solid grey;
+    justify-content: center;
+    width:70%;
+    margin-top:-20px;
+}
+
+.country-info img{
+    margin-right:20px;
+}
+
+.country-info h1{
+  margin-top:50px;
+  font-family: fantasy;
+}
+
+.info-country{
+    width:60%;
+  margin:0px auto;
+  text-align:center;
+}
+
+.info-wrap{
+    display:flex;
+    flex-direction: column;
+}
+
+
+.btn{
+    background-color: grey;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.marquee{
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 330px) {
+    .form-control {
+     width: 90%;
+    }
+  }
+
+@media screen and (max-width: 780px) {
+   .list{
+       grid-template-columns: 1fr 1fr 1fr;
+   }
+}
+
+@media screen and (max-width: 470px) {
+    .list{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .cases{
+        display:grid;
+        width:90%;
+        justify-content: left;
+    }
+    .cases h5{
+        padding:0px;
+        padding: 7px 0;
+        padding-left:10px;
+    }
+    .info-country{
+        width:80%;
+    }
+    .nav{
+        padding-bottom:20px;
+    }
+ }
+
+ @media screen and (max-width: 380px) {
+    .list{
+        grid-template-columns: 1fr ;
+    }
+ }

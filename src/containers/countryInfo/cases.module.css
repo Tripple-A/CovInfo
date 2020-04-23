@@ -1,0 +1,92 @@
+.cases{
+    display: flex;
+    width:100%;
+    margin:0px auto;
+    justify-content: center;
+    text-align: left;
+    font-family: fantasy;
+}
+
+h1{
+    font-family: fantasy;
+    text-align: center;
+    padding-top:20px;
+}
+
+.first, .second{
+  padding-left:5%;
+  padding-right:5%;
+  padding-top: 5%;
+  background-color: rgb(187, 189, 212);
+}
+
+.second{
+    background-color:#A1A5F6;
+}
+
+.img{
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+    margin-right:5%;
+}
+
+.flexi{
+    display:flex;
+    width:60%;
+    border-bottom: 1px solid grey; 
+    margin:0px auto;
+    justify-content: center;
+    padding-bottom:20px;
+    margin-bottom: 10px;
+}
+.num{
+    float: right;
+    padding-left:30px;
+   }
+
+.cases h5{
+    padding-bottom:20%;
+}
+
+.btn{
+    text-align: center;
+    margin-top:20px;
+}
+
+
+@media screen and (max-width: 470px) {
+    .first{
+        width:100vw;
+        background-color: white;
+    }
+
+    .second, .first{
+        background-color: white;
+       padding:0;
+    }
+
+    .num{
+     float: right;
+     margin-right:25px
+    }
+
+    .odd{
+        background-color: rgb(187, 189, 212);
+    }
+
+    .even{
+        background-color: #A1A5F6;
+    }
+    .cases{
+        display:grid;
+        width:100%;
+        justify-content: left;
+    }
+    .cases h5{
+        padding:0px;
+        padding: 7px 0;
+        padding-left:5%;
+    }
+    
+}
