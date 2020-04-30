@@ -11,19 +11,34 @@ const mapStateToProps = state => ({
 
 const CountryInfo = ({ match, countries }) => {
   const [country, setCountry] = useState({});
+  const numberWithCommas = resp => {
+    const keys = Object.keys(resp)
+          keys.forEach(item => {
+            if(typeof(resp[item]) === 'number')
+            resp[item] = resp[item].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+          })
+    return resp;
+  }
   useEffect(() => {
     async function fetchData() {
       await track.countries(match.params.name)
-        .then(resp => setCountry(resp));
+        .then(resp => {
+          
+          setCountry(numberWithCommas(resp))
+        }
+        );
     }
     if (countries.length === 0) fetchData();
     else {
       const found = countries.find(country => country.country === match.params.name);
-      setCountry(found);
+      
+      setCountry(numberWithCommas(found));
     }
-  }, [match, countries]);
+  }, [match, countries,country]);
 
   const testsDone = country.tests === 0 ? 'Unknown' : country.tests;
+  
+
   return (
     <div>
       <div className={style.flexi}>

@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/marquee.css';
+import { Link } from 'react-router-dom';
+
 
 const Header = ({ total, style, change }) => {
   const toggle = e => {
@@ -12,10 +14,12 @@ const Header = ({ total, style, change }) => {
   return (
     <div className="jumbotron">
       <ul className="nav">
+        <Link to='/'>
         <li className="nav-item logo" data-testid="cov">
           Cov:
           <span className="info">:Info </span>
         </li>
+        </Link>
         <li className="nav-item ml-auto mt-2">
           Get the latest Covid-19 stats here
         </li>
@@ -23,20 +27,20 @@ const Header = ({ total, style, change }) => {
       <div className="marquee">
         <button type="button" onClick={e => toggle(e)}>Hide Stats</button>
         <p style={style}>
-          Total Cases:
+          Total Cases: 
           {total.cases}
-          {' '}
-          , Total Deaths:
+          {' '} 
+          , Total Deaths: 
           {total.deaths}
           {' '}
           ,
-          Total Recovered:
+          Total Recovered: 
           {total.recovered}
           {' '}
-          , Total Tests:
+          , Total Tests: 
           {total.tests}
           {' '}
-          , Total Active:
+          , Total Active: 
           {total.active}
         </p>
       </div>
@@ -49,12 +53,12 @@ Header.propTypes = {
     display: PropTypes.string.isRequired,
   }).isRequired,
   total: PropTypes.shape({
-    cases: PropTypes.number,
-    death: PropTypes.number,
-    recovered: PropTypes.number,
-    active: PropTypes.number,
-    deaths: PropTypes.number,
-    tests: PropTypes.number,
+    cases: PropTypes.string,
+    death: PropTypes.string,
+    recovered: PropTypes.string,
+    active: PropTypes.string,
+    deaths: PropTypes.string,
+    tests: PropTypes.string,
   }).isRequired,
   change: PropTypes.func.isRequired,
 };

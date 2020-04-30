@@ -1,6 +1,7 @@
 body{
     overflow-x: hidden;;
 }
+
 .jumbotron{
     background-color: rgb(23,25,37);
     color:white;
@@ -9,12 +10,17 @@ body{
     overflow-x: hidden;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 .info, .country{
     color:#A1A5F6
 }
 .logo{
     font-size: 30px;
     font-weight: bold;
+    color:white
 }
 .search{
   width: 100%;

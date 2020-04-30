@@ -7,12 +7,22 @@ import '../styles/style.css';
 import track from '../apis';
 import Header from './header';
 
+  const numberWithCommas = resp => {
+  const keys = Object.keys(resp)
+        keys.forEach(item => {
+          if(typeof(resp[item]) === 'number')
+          resp[item] = resp[item].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        })
+  return resp;
+}
+
 function App() {
   const [total, setTotal] = useState({});
   const [style, setStyle] = useState({ display: 'block' });
+  
   useEffect(() => {
     async function fetchData() {
-      await track.all().then(resp => setTotal(resp));
+      await track.all().then(resp => setTotal(numberWithCommas(resp)));
     }
     fetchData();
   });
