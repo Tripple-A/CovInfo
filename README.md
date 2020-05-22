@@ -36,14 +36,14 @@ This is an app that gives you up-to-date information on the covid-19 affected co
 * Css Modules
 
 <!-- LIVE PREVIEW -->
-## LIVE PREVIEW
+## Live Preview
 Find the live version [here](https://cov-info.netlify.com/). 
 Below is a screenshot of the app on a mobile screen and a laptop screen.
 ![Image](/src/proof.png)
 
 <!-- REQUIRED INSTALLATION -->
-## REQUIRED INSTALLATIONS
-* npm
+## Required Installations
+* Npm
 
 
 
