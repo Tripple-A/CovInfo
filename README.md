@@ -5,7 +5,7 @@ This is an app that gives you up-to-date information on the Covid-19 affected co
 ## Table of Contents
 
 * [User Features](#user-features)
-* [Built With](#built-with)
+* [Built with](#built-with)
 * [Technologies Employed](#technologies-employed)
 * [Live Preview](#live-preview)
 * [Required Installations](#required-installations)
@@ -21,8 +21,8 @@ This is an app that gives you up-to-date information on the Covid-19 affected co
 * A user can filter search based on country of his choice.
 * A user can click a specific country to view further information on the virus in that country.
 
-<!-- BUILT WITH -->
-## Built With
+<!-- BUILT wITH -->
+## Built with
 * VsCode
 * Windows
 * Love and passion for code ❤️
