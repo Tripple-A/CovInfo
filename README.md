@@ -1,6 +1,6 @@
 # Cov-Info
 
-This is an app that gives you up-to-date information on the covid-19 affected countries and keeps track of the statistics.
+This is an app that gives you up-to-date information on the Covid-19 affected countries and keeps track of the statistics.
 
 ## Table of Contents
 
@@ -9,7 +9,7 @@ This is an app that gives you up-to-date information on the covid-19 affected co
 * [Technologies Employed](#technologies-employed)
 * [Live Preview](#live-preview)
 * [Required Installations](#required-installations)
-* [Installation of This App](#instalation)
+* [Installation](#installation)
 * [Future Features](#future-features)
 * [License](#license)
 * [Author](#author)
@@ -43,7 +43,7 @@ Below is a screenshot of the app on a mobile screen and a laptop screen.
 
 <!-- REQUIRED INSTALLATION -->
 ## Required Installations
-* Npm
+* npm
 
 
 
