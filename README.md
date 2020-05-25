@@ -22,13 +22,13 @@ This is an app that gives you up-to-date information on the Covid-19 affected co
 * A user can click a specific country to view further information on the virus in that country.
 
 <!-- BUILT WITH -->
-# Built With
+## Built With
 * VsCode
 * Windows
 * Love and passion for code ❤️
 
 <!-- TECHNOLOGIES EMPLOYED -->
-# Technologies Employed
+## Technologies Employed
 * React Hooks
 * Redux Store
 * React Routers
