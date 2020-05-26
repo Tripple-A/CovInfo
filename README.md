@@ -49,7 +49,7 @@ Below is a screenshot of the app on a mobile screen and a laptop screen.
 
 <!-- INSTALLATION -->
 ## Installation of This Repository
-Clone the Repository,
+Clone the Repository
 
 ```Shell
 your@pc:~$ git clone git@github.com:Tripple-A/CovInfo.git
