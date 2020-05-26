@@ -43,7 +43,7 @@ Below is a screenshot of the app on a mobile screen and a laptop screen.
 
 <!-- REQUIRED INSTALLATION -->
 ## Required Installations
-* npm
+* Npm
 
 
 
